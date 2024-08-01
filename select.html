@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>select</title>
+    <script defer src = "./select.js"></script>
+</head>
+<body>
+    <div id="container">
+        <form name="testForm">
+            <fieldset>
+            <ul>
+                <li>
+                    <label for="userName">이름</label>
+                    <input type="text" id = "userName" name ="userName">
+                </li>
+                <li>
+                    <label for="class">수업</label>
+                    <select name="major" id="major">
+                        <option>학과 선택</option>
+                        <option value="컴퓨터융합소프트웨어학과" >컴퓨터융합소프트웨어학과</option>
+                        <option value="화학공학과">화학공학과</option>
+                        <option value="건축학과">건축학과</option>
+                        <option value="디자인학과">디자인학과</option>
+                        <option value="중국어학과">중국어학과</option>
+                    </select>
+                </li>
+               
+            </ul>
+            </fieldset>
+            <fieldset>
+                <label><input type="radio" name = "subject" value="data-structer">자료구조</label>
+                <label><input type="radio" name = "subject" value="algorithm">알고리즘</label>
+                <label><input type="radio" name = "subject" value="digital-system">디지털시스템</label>
+            </fieldset>
+            <fieldset>
+                <label><input type="checkbox"value="morning" name ='time'>아침</label>
+                <label><input type="checkbox"value="afternoon" name ='time'>점심</label>
+                <label><input type="checkbox"value="evening" name ='time'>저녁</label>
+            </fieldset>
+            <fieldset>
+                <div id="result"></div>
+                <button id="submit">제출</button>
+            </fieldset>
+        </form>
+
+    </div>
+</body>
+</html>
